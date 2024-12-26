@@ -116,7 +116,7 @@ As there are many benchmarks being released, we will update this repo frequently
 * **Relevance:** Essential for materials research and development using AI.
 * **Source:** [arXiv](https://arxiv.org/abs/2411.00177)
 
-## SciBench: Evaluating College-Level Scientific Problem-Solving Abilities of Large Language Models
+### SciBench: Evaluating College-Level Scientific Problem-Solving Abilities of Large Language Models
 * **Description:** SciBench is an expansive benchmark suite designed to systematically examine the reasoning capabilities required for solving complex scientific problems at the collegiate level. It contains a curated dataset featuring scientific problems from the mathematics, chemistry, and physics domains.
 * **Purpose:** To evaluate the performance of LLMs on collegiate-level scientific problem-solving and to identify areas for improvement in reasoning abilities.
 * **Relevance:** Crucial for advancing the scientific research and discovery capabilities of LLMs.
@@ -125,7 +125,7 @@ As there are many benchmarks being released, we will update this repo frequently
 * **Source:** [arXiv:2307.10635](https://doi.org/10.48550/arXiv.2307.10635)  
 * **Cite as:** arXiv:2307.10635 [cs.CL] (or arXiv:2307.10635v3 [cs.CL] for this version)
 
-## LAB-Bench: Measuring Capabilities of Language Models for Biology Research
+### LAB-Bench: Measuring Capabilities of Language Models for Biology Research
 * **Description:** LAB-Bench is a broad dataset of over 2,400 multiple-choice questions designed to evaluate AI systems on practical biology research capabilities, including literature recall, figure interpretation, database navigation, and DNA/protein sequence manipulation.
 * **Purpose:** To measure the performance of LLMs on tasks required for scientific research and to develop automated research systems.
 * **Relevance:** Essential for accelerating scientific discovery across disciplines by augmenting LLMs.
