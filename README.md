@@ -36,7 +36,7 @@ As there are many benchmarks being released, we will update this repo frequently
   * [GLUE Homepage](https://gluebenchmark.com/)  
   * [GLUE Dataset](https://huggingface.co/datasets/glue)  
 
-### SciQ
+### SciQ (multiple-choice questions, physics, chemistry, and biology)
 * **Description:** Consists of multiple-choice questions mainly in natural sciences like physics, chemistry, and biology.
 * **Purpose:** To test the ability to answer science-based questions, often with additional supporting text.
 * **Relevance:** Useful for educational tools, especially in science education and knowledge testing platforms.
@@ -133,3 +133,15 @@ As there are many benchmarks being released, we will update this repo frequently
 * **Availability:** A public subset of LAB-Bench is available for use.
 * **Source:** [arXiv:2407.10362](https://doi.org/10.48550/arXiv.2407.10362)  
 * **Cite as:** arXiv:2407.10362 [cs.AI] (or arXiv:2407.10362v3 [cs.AI] for this version)
+
+
+### SciEx: Benchmarking Large Language Models on Scientific Exams with Human Expert Grading and Automatic Grading
+
+* **Description:** SciEx is a benchmark consisting of university computer science exam questions designed to evaluate the ability of LLMs to solve scientific tasks. It is characterized by being multilingual (containing both English and German exams), multi-modal (including questions with images), and featuring various types of freeform questions with different difficulty levels.
+* **Purpose:** To assess the performance of LLMs on scientific tasks typically encountered in university examinations, including writing algorithms, querying databases, and providing mathematical proofs.
+* **Relevance:** Essential for evaluating the capabilities of LLMs in scientific domains and their potential as assistants in academic and research settings.
+* **Performance:** The best-performing LLM achieves an average exam grade of 59.4%, indicating that free-form exams in SciEx remain challenging for current LLMs.
+* **Human Expert Grading:** Human expert grading of LLM outputs on SciEx is provided to evaluate performance, showcasing the difficulty in assessing free-form responses.
+* **LLM-as-a-Judge:** The study proposes using LLMs as judges to grade answers on SciEx, with experiments showing a 0.948 Pearson correlation with expert grading, demonstrating their potential as graders despite not being perfect at solving the exams.
+* **Source:** [SciEx Benchmark](https://www.scienceex.ai/) [arXiv](https://arxiv.org/abs/2406.10421)
+
