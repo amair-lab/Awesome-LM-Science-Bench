@@ -1,232 +1,207 @@
+# Awesome-LM-Science-Bench
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/c1f60281-6a28-4ba1-99ee-5827fac35a43" width=320 />
+> An open benchmark list covers LLM's reasoning benchmark for science problems, we focus on LLM evaluation datasets in natural sciences.
 
-
-
-
-# [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) Awesome-LM-Science-Bench  
-
-> An open benchmark list covers LLM's reasoning benchmark for science problems, we focus on LLM evaluation datasets in natural sciences. 
-
-Hi👋, if you find this repo helpful, welcome to give a star ⭐️! 
+Hi👋, if you find this repo helpful, welcome to give a star ⭐️!
 
 As many benchmarks are being released, we will update this repo frequently and **welcome contributions** from the 🏠community!
 
+(last update: Feb 2025)
+
 ---
 
-### Massive Multitask Language Understanding (MMLU, partial for natural science)
-* **Description:** Measures general knowledge across 57 different subjects, ranging from STEM to social sciences.
-* **Purpose:** To assess the LLM's understanding and reasoning in a wide range of subject areas.
-* **Relevance:** Ideal for multifaceted AI systems that require extensive world knowledge and problem-solving ability.
-* **Source:** [Measuring Massive Multitask Language Understanding](https://arxiv.org/abs/2009.03300)  
+## General Science & Multidisciplinary Benchmarks
+
+### SciEx [2024 June]
+* **Description:** A multilingual, multimodal benchmark using university computer science exam questions. Includes free-form questions with images and varying difficulty.
+* **Purpose:** Assesses LLMs' ability to handle scientific tasks in university exams, including algorithm writing, database querying, and mathematical proofs.
+* **Relevance:**  Essential for evaluating LLMs in academic and research settings, with human expert grading provided for performance evaluation.
+* **Performance:**  Even top LLMs face challenges with free-form exams in SciEx, indicating ongoing areas for development.
+* **Source:** [SciEx Benchmark](https://www.scienceex.ai/) [arXiv](https://arxiv.org/abs/2406.10421)
+
+### SciBench [2023 July]
+* **Description:** A benchmark suite for evaluating college-level scientific problem-solving abilities, featuring problems from mathematics, chemistry, and physics.
+* **Purpose:**  To rigorously test LLMs' reasoning on complex scientific problems at the university level.
+* **Relevance:** Vital for pushing the boundaries of LLMs in scientific research and discovery, highlighting areas for improvement in advanced reasoning.
+* **Results:**  Current LLMs show limited performance, indicating substantial room for improvement in collegiate-level scientific problem-solving.
+* **Source:** [arXiv:2307.10635](https://doi.org/10.48550/arXiv.2307.10635)
+
+### SciKnowEval [2024 June]
+* **Description:** A benchmark designed to evaluate LLMs across five levels of scientific knowledge, from memory to reasoning, in chemistry and physics. It includes 70,000 scientific problems.
+* **Purpose:** Establishes a framework for systematically assessing the depth of scientific knowledge in LLMs.
+* **Relevance:** Essential for the detailed evaluation of LLMs in scientific domains, aiming to standardize scientific knowledge benchmarking.
+* **Source:** [arXiv:2406.09098](https://arxiv.org/html/2406.09098v3)
+
+### Advanced Reasoning Benchmark (ARB) [2023]
+* **Description:**  Focuses on advanced reasoning problems across disciplines like physics and chemistry.
+* **Purpose:**  Assesses LLMs' logical deduction and complex problem-solving capabilities in scientific contexts.
+* **Relevance:**  Crucial for evaluating the inferential abilities of LLMs in scientific reasoning.
+* **Source:** [OpenReview: ARB](https://openreview.net/forum?id=gsZAtAdzkY)
+
+### Massive Multitask Language Understanding (MMLU) [2020 September]
+* **Description:** Measures general knowledge across 57 diverse subjects, spanning STEM, social sciences, and humanities.
+* **Purpose:** Evaluates LLMs' broad understanding and reasoning capabilities across a wide array of disciplines.
+* **Relevance:** Suitable for assessing AI systems requiring extensive world knowledge and versatile problem-solving skills.
+* **Source:** [Measuring Massive Multitask Language Understanding](https://arxiv.org/abs/2009.03300)
 * **Resources:**
-  * [MMLU GitHub](https://github.com/hendrycks/test)  
-  * [MMLU Dataset](https://people.eecs.berkeley.edu/~hendrycks/data.tar)  
+    * [MMLU GitHub](https://github.com/hendrycks/test)
+    * [MMLU Dataset](https://people.eecs.berkeley.edu/~hendrycks/data.tar)
 
-
-### AI2 Reasoning Challenge (ARC)
-* **Description:** Tests LLMs on grade-school science questions, requiring both deep general knowledge and reasoning abilities.
-* **Purpose:** To evaluate the ability to answer complex science questions that require logical reasoning.
-* **Relevance:** Useful for educational AI applications, automated tutoring systems, and general knowledge assessments.
-* **Source:** [Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge](https://arxiv.org/abs/1803.05457)  
+### General Language Understanding Evaluation (GLUE) [2018 April]
+* **Description:** A benchmark suite comprising nine diverse natural language understanding tasks. These tasks include single-sentence analysis, similarity and paraphrasing detection, and natural language inference.
+* **Purpose:** Designed to provide a comprehensive evaluation of language models' ability to understand natural language across different tasks and datasets.
+* **Relevance:** Crucial for developing and evaluating NLP systems intended for broad language processing applications like chatbots and content analysis.
+* **Source:** [GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding](https://arxiv.org/abs/1804.07461)
 * **Resources:**
-  * [ARC Dataset: HuggingFace](https://huggingface.co/datasets/ai2_arc)  
-  * [ARC Dataset: Allen Institute](https://allenai.org/data/arc)  
+    * [GLUE Homepage](https://gluebenchmark.com/)
+    * [GLUE Dataset: HuggingFace](https://huggingface.co/datasets/glue)
+    * [GLUE Benchmark - Kaggle](https://www.kaggle.com/datasets/xhlulu/general-language-understanding-evaluation)
 
-
-### General Language Understanding Evaluation (GLUE)
-* **Description:** A collection of various language tasks from multiple datasets, designed to measure overall language understanding.
-* **Purpose:** To provide a comprehensive assessment of language understanding abilities in different contexts.
-* **Relevance:** Crucial for applications requiring advanced language processing, such as chatbots and content analysis.
-* **Source:** [GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding](https://arxiv.org/abs/1804.07461)  
+### AI2 Reasoning Challenge (ARC) [2018 March]
+* **Description:**  A question-answering dataset from grade 3 to grade 9 science exams, featuring multiple-choice questions that demand reasoning. It includes both an "Easy" set and a more challenging "Challenge" set with questions requiring deeper inference.
+* **Purpose:**  Tests LLMs' ability to answer complex science questions that require logical reasoning and common-sense knowledge.
+* **Relevance:**  Valuable for educational AI applications, particularly in automated tutoring systems and knowledge assessment for grade-school science.
+* **Source:** [Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge](https://arxiv.org/abs/1803.05457)
 * **Resources:**
-  * [GLUE Homepage](https://gluebenchmark.com/)  
-  * [GLUE Dataset](https://huggingface.co/datasets/glue)  
+    * [ARC Dataset: HuggingFace](https://huggingface.co/datasets/ai2_arc)
+    * [ARC Dataset: Allen Institute](https://allenai.org/data/arc)
+    * [ARC Leaderboard](https://leaderboard.allenai.org/arc/submissions/public)
 
-
-### SciQ (multiple-choice questions, physics, chemistry, and biology)
-* **Description:** Consists of multiple-choice questions mainly in natural sciences like physics, chemistry, and biology.
-* **Purpose:** To test the ability to answer science-based questions, often with additional supporting text.
-* **Relevance:** Useful for educational tools, especially in science education and knowledge testing platforms.
-* **Source:** [Crowdsourcing Multiple Choice Science Questions](https://arxiv.org/abs/1707.06209)  
+### SciQ [2017 July]
+* **Description:** A dataset of 13,679 multiple-choice science exam questions, primarily in physics, chemistry, and biology. Many questions include supporting evidence to aid in answering.
+* **Purpose:** Tests LLMs on science-based question answering, evaluating their ability to utilize provided context and scientific knowledge.
+* **Relevance:** Useful for developing educational tools and platforms for science education and knowledge assessment.
+* **Source:** [Crowdsourcing Multiple Choice Science Questions](https://arxiv.org/abs/1707.06209)
 * **Resources:**
-  * [SciQ Dataset: HuggingFace](https://huggingface.co/datasets/sciq)
+    * [SciQ Dataset: HuggingFace](https://huggingface.co/datasets/sciq)
+    * [SciQ Benchmark (Text Generation) - Papers With Code](https://paperswithcode.com/sota/text-generation-on-sciq)
 
 
-### LAB-Bench: Language Agent Biology Benchmark
-* **Description:** A broad dataset of over 2,400 multiple-choice questions for evaluating AI systems on a range of practical biology research capabilities.
-* **Purpose:** To assess recall and reasoning over literature, interpretation of figures, navigation of databases, and comprehension and manipulation of DNA and protein sequences.
-* **Relevance:** Useful for evaluating LLMs in the context of biology research and education.
+## Biology Benchmarks
+
+### LAB-Bench: Language Agent Biology Benchmark [2024 July]
+* **Description:** A dataset of over 2,400 multiple-choice questions for biology research capabilities, covering literature recall, figure interpretation, database navigation, and sequence manipulation.
+* **Purpose:**  Evaluates AI systems on practical biology research tasks, aiming to develop AI assistants for scientific research.
+* **Relevance:**  Crucial for accelerating scientific discovery by enhancing LLMs in biology-related research tasks. Performance is compared against human biology experts.
 * **Source:** [LAB-Bench: Measuring Capabilities of Language Models for Biology](https://arxiv.org/abs/2407.10362)
+* **Resources:**
+    * [LAB-Bench GitHub](https://github.com/Future-House/LAB-Bench)
 
-### ChemQA: Chemistry Question-Answering Dataset
-* **Description:** A multimodal question-and-answering dataset on chemistry reasoning with 5 QA tasks.
-* **Purpose:** To evaluate LLMs' abilities in chemistry-related tasks such as counting atoms, calculating molecular weights, and retrosynthesis planning.
-* **Relevance:** Essential for AI applications in chemistry education and research.
-* **Source:** [GitHub - materials-data-facility/matchem-llm](https://github.com/materials-data-facility/matchem-llm)
-
-
-### ChemBench - Lamalab
-* **Description:** A benchmark with over 7000 questions curated for various chemical topics.
-* **Purpose:** To evaluate LLMs on chemistry knowledge and reasoning abilities.
-* **Relevance:** Important for AI systems in chemistry education and research.
-* **Source:** [GitHub - materials-data-facility/matchem-llm](https://github.com/materials-data-facility/matchem-llm)
-
-
-### ChemSafetyBench: LLM Safety in Chemistry
-* **Description:** A benchmark designed to evaluate the safety of LLMs in the field of chemistry.
-* **Purpose:** To assess the safety and reliability of LLMs in chemistry-related applications.
-* **Relevance:** Crucial for ensuring the safe use of LLMs in chemistry.
-* **Source:** [ChemSafetyBench: Benchmarking LLM Safety on Chemistry](https://arxiv.org/pdf/2411.16736)
-
-### LLM4Mat-Bench: Benchmarking LLMs for Materials Property Prediction
-* **Description:** The largest benchmark for evaluating the performance of LLMs in predicting the properties of crystalline materials.
-* **Purpose:** To assess LLMs' capabilities in materials science and chemistry.
-* **Relevance:** Useful for AI applications in materials research and development.
-* **Source:** [LLM4Mat-Bench: Benchmarking Large Language Models for Materials](https://arxiv.org/abs/2411.00177)
-
-
-### BioLLMBench: A Comprehensive Benchmarking of Large Language Models in Biology
-* **Description:** A novel benchmarking framework for comprehensively evaluating LLMs in solving bioinformatics tasks.
-* **Purpose:** To assess LLMs' capabilities in bioinformatics and biological reasoning.
-* **Relevance:** Useful for evaluating LLMs in the context of biological research and data analysis.
+### BioLLMBench [2023 December]
+* **Description:** A benchmarking framework for evaluating LLMs in bioinformatics tasks.
+* **Purpose:**  Comprehensively assesses LLMs' capabilities in bioinformatics and biological reasoning.
+* **Relevance:**  Useful for evaluating and comparing LLMs in biological research and data analysis contexts.
 * **Source:** [BioLLMBench: A Comprehensive Benchmarking of Large Language Models in Biology](https://www.biorxiv.org/content/10.1101/2023.12.19.572483v1)
 
-### Large Language Model Benchmarks in Medical Tasks
-* **Description:** This comprehensive survey presents various benchmark datasets employed in medical LLM tasks, spanning multiple modalities including text, image, and multimodal benchmarks, focusing on different aspects of medical knowledge such as electronic health records (EHRs), doctor-patient dialogues, medical question-answering, and medical image captioning.
-* **Purpose:** To evaluate the performance of LLMs in medical tasks and contribute to the evolving field of medical artificial intelligence.
-* **Relevance:** Vital for advancing multimodal medical intelligence and improving healthcare delivery through AI.
-* **Source:** [arXiv](https://arxiv.org/html/2410.21348v1) 
+## Chemistry Benchmarks
 
+### ChemQA [2024]
+* **Description:** A multimodal question-answering dataset focused on chemistry reasoning, featuring 5 QA tasks.
+* **Purpose:** Evaluates LLMs on chemistry-specific tasks like atom counting, molecular weight calculation, and retrosynthesis planning.
+* **Relevance:**  Essential for AI applications in chemistry education, research, and complex chemical problem-solving.
+* **Source:** [GitHub - materials-data-facility/matchem-llm](https://github.com/materials-data-facility/matchem-llm)
+* **Resources:**
+    * [ChemQA Dataset: HuggingFace](https://huggingface.co/datasets/shangzhu/chemqa)
 
-### NPHardEval: Dynamic Benchmark on Reasoning Ability of LLMs
-* **Description:** A new benchmark containing a broad spectrum of 900 algorithmic questions belonging up to the NP-Hard complexity class.
-* **Purpose:** To evaluate the reasoning ability of LLMs on complex algorithmic questions.
-* **Relevance:** Important for assessing LLMs' capabilities in solving complex problems in natural sciences.
-* **Source:** [NPHardEval: Dynamic Benchmark on Reasoning Ability of LLMs](https://aclanthology.org/2024.acl-long.225/) 
-
-
-### ChemLLMBench: A comprehensive benchmark on eight chemistry tasks
-* **Description:** ChemLLMBench covers a range of chemistry tasks, providing a thorough evaluation of LLMs in the chemistry domain.
-* **Purpose:** To assess LLMs' capabilities in various chemistry-related tasks.
-* **Relevance:** Useful for advancing chemistry research and education with AI.
+### ChemBench [2024]
+* **Description:**  Features over 7000 questions covering a wide range of chemistry topics.
+* **Purpose:**  Assesses LLMs' chemistry knowledge and reasoning skills across various chemical domains.
+* **Relevance:**  Important for evaluating AI systems designed for chemistry education and research.
 * **Source:** [GitHub - materials-data-facility/matchem-llm](https://github.com/materials-data-facility/matchem-llm)
 
+### ChemSafetyBench: LLM Safety in Chemistry [2024 November]
+* **Description:**  A benchmark specifically designed to evaluate the safety aspects of LLMs in chemistry-related contexts.
+* **Purpose:**  Assesses the safety and reliability of LLMs for chemistry applications, focusing on preventing harmful outputs.
+* **Relevance:** Crucial for ensuring the responsible and safe deployment of LLMs in chemistry and related fields.
+* **Source:** [ChemSafetyBench: Benchmarking LLM Safety on Chemistry](https://arxiv.org/pdf/2411.16736)
 
-### SMolInstruct: Instruction tuning dataset for chemistry
-* **Description:** SMolInstruct focuses on small molecules and includes 14 tasks and over 3M samples, covering name conversion, property prediction, molecule description, and chemical reaction prediction.
-* **Purpose:** To enhance LLMs with chemistry-specific instructions and improve their performance on chemistry tasks.
-* **Relevance:** Important for developing LLMs that can assist in chemical research and development.
-* **Source:** [GitHub - materials-data-facility/matchem-llm](https://github.com/materials-data-facility/matchem-llm)
+### ChemLLMBench [2024 - NeurIPS 2023 Datasets and Benchmarks Track]
+* **Description:** A comprehensive benchmark covering eight distinct chemistry tasks.
+* **Purpose:** Provides a thorough evaluation of LLMs' capabilities across different chemistry-related tasks.
+* **Relevance:**  Useful for advancing AI applications in chemistry research, development, and education.
+* **Source:** [https://github.com/ChemFoundationModels/ChemLLMBench](https://github.com/ChemFoundationModels/ChemLLMBench)
+
+### SMolInstruct: Instruction tuning dataset for chemistry [2024]
+* **Description:** An instruction-tuning dataset focused on small molecules, including over 3M samples across 14 tasks like name conversion, property prediction, and reaction prediction.
+* **Purpose:**  Enhances LLMs' ability to follow chemistry-specific instructions and improves their performance in chemical tasks.
+* **Relevance:**  Important for developing instruction-tuned LLMs for assisting in chemical research and development.
+* **Source:** [https://openreview.net/forum?id=lY6XTF9tPv](https://openreview.net/forum?id=lY6XTF9tPv)
+
+### ChemBench4k [2024]
+* **Description:** Includes 4100 high-quality single-choice questions across nine core chemistry tasks.
+* **Purpose:** Evaluates LLMs' chemistry knowledge and reasoning through a large set of curated questions.
+* **Relevance:** Crucial for assessing LLMs' competency in chemistry, particularly in education and knowledge evaluation.
+* **Source:** [https://huggingface.co/datasets/AI4Chem/ChemBench4K](https://huggingface.co/datasets/AI4Chem/ChemBench4K)
+
+### Fine-tuning Large Language Models for Chemical Text Mining [2024]
+* **Description:** A study and resources for fine-tuning LLMs on chemical text mining tasks like compound recognition and reaction labeling.
+* **Purpose:** Demonstrates the effectiveness of fine-tuning LLMs for complex chemical information extraction from text.
+* **Relevance:**  Valuable for chemical research by improving LLMs' ability to extract knowledge from chemical literature.
+* **Source:** [Chem. Sci., 2024](https://pubs.rsc.org/en/content/articlehtml/2024/sc/d4sc00924j)
+
+### ChemLit-QA [2024]
+* **Description:** An expert-validated, open-source dataset with over 1,000 entries designed for chemistry Retrieval-Augmented Generation (RAG) and fine-tuning tasks.
+* **Purpose:**  Benchmarks LLMs in chemistry-specific RAG tasks, evaluating their ability to generate context-aware, factual answers from chemistry literature.
+* **Relevance:**  Aids in developing and evaluating LLMs for chemistry research, particularly in tasks requiring information retrieval and synthesis from scientific text.
+* **Resources:** [ChemLit-QA GitHub](https://github.com/geemi725/ChemLit-QA)
+
+### ScholarChemQA [2024 July]
+* **Description:** A large-scale Question Answering dataset constructed from chemical research papers, featuring multi-choice questions based on paper titles and abstracts.
+* **Purpose:**  Evaluates LLMs' ability to answer research-level chemical questions, reflecting real-world challenges in chemical information processing.
+* **Relevance:**  Benchmarks LLMs on understanding and reasoning over chemical research literature, highlighting areas for improvement in complex chemical QA.
+* **Source:** [arXiv:2407.16931](https://arxiv.org/abs/2407.16931)
 
 
-### ChemBench4k: Chemistry competency evaluation benchmark
-* **Description:** ChemBench4k includes nine chemistry core tasks and 4100 high-quality single-choice questions and answers.
-* **Purpose:** To evaluate the chemistry knowledge and reasoning abilities of LLMs.
-* **Relevance:** Crucial for applications in chemistry education and knowledge assessment.
-* **Source:** [GitHub - materials-data-facility/matchem-llm](https://github.com/materials-data-facility/matchem-llm)
+## Materials Science Benchmarks
 
+### Leveraging Large Language Models for Explaining Material Synthesis Mechanisms [2024 - NeurIPS AI4Mat]
+* **Description:** A benchmark dataset of 775 semi-manually created multiple-choice questions focused on gold nanoparticle (AuNPs) synthesis mechanisms.
+* **Purpose:** Evaluates LLMs' reasoning about material synthesis mechanisms and their understanding of physicochemical principles.
+* **Relevance:** Highlights the potential of LLMs in understanding scientific mechanisms and provides tools for exploring synthesis methods.
+* **Source:** [https://github.com/amair-lab/Physicochemical-LMs](https://github.com/amair-lab/Physicochemical-LMs)
 
-### Chem-RnD and ChemEDU CLAIRify: Chemistry protocols and instructions
-* **Description:** Chem-RnD and ChemEDU CLAIRify provide detailed chemistry protocols for synthesizing organic compounds and everyday educational chemistry instructions.
-* **Purpose:** To assess LLMs' ability to understand and generate instructions for chemical processes.
-* **Relevance:** Useful for training LLMs in chemical synthesis and education.
-* **Source:** [GitHub - materials-data-facility/matchem-llm](https://github.com/materials-data-facility/matchem-llm)
+### LLM4Mat-Bench: Benchmarking Large Language Models for Materials Property Prediction [2024 November]
+* **Description:** The largest benchmark for evaluating LLMs in predicting crystalline material properties.
+* **Purpose:** Assesses LLMs' capabilities in materials science, specifically in predicting material properties.
+* **Relevance:**  Useful for AI-driven materials research and development, focusing on property prediction tasks.
+* **Source:** [LLM4Mat-Bench: Benchmarking Large Language Models for Materials](https://arxiv.org/abs/2411.00177)
+* **Source (Alternative):** [arXiv](https://arxiv.org/abs/2411.00177)
 
+### MaterialBENCH: Evaluating College-Level Materials Science Knowledge [2024 September]
+* **Description:** A college-level benchmark dataset for materials science, designed to assess knowledge equivalent to that of an undergraduate in the field.
+* **Purpose:** Evaluates LLMs' understanding of materials science concepts and problem-solving abilities at the college level.
+* **Relevance:** Useful for assessing LLMs' readiness for materials science education and research tasks.
+* **Source:** [arXiv](https://arxiv.org/abs/2409.03161)
 
-### LLM4Mat-Bench: Benchmarking Large Language Models for Materials
-* **Description:** LLM4Mat-Bench is the largest benchmark for evaluating LLMs in predicting properties of crystalline materials.
-* **Purpose:** To assess LLMs' capabilities in materials science and property prediction.
-* **Relevance:** Essential for materials research and development using AI.
+### MatSci-NLP [2023]
+* **Description:** A comprehensive benchmark for NLP models in materials science, covering tasks like property prediction and information extraction from literature.
+* **Purpose:** Evaluates NLP models, including LLMs, in materials science-specific tasks, encouraging generalization across different tasks.
+* **Relevance:**  A cornerstone benchmark for assessing LLM capabilities in the field of materials science and NLP applications.
+* **Source:** [MatSci-NLP](https://mila.quebec/en/article/revolutionizing-materials-science-with-nlp-introducing-matsci-nlp-and-honeybee)
+
+### LLM4Mat-Bench: Benchmarking Large Language Models for Materials [2024 November]
+* **Description:**  The largest benchmark focused on evaluating LLMs for predicting properties of crystalline materials.
+* **Purpose:**  Specifically assesses LLMs' predictive capabilities in materials science for crystalline structures.
+* **Relevance:**  Essential for advancing AI in materials research and development, particularly in property prediction.
 * **Source:** [arXiv](https://arxiv.org/abs/2411.00177)
 
 
-### SciBench: Evaluating College-Level Scientific Problem-Solving Abilities of Large Language Models
-* **Description:** SciBench is an expansive benchmark suite designed to systematically examine the reasoning capabilities required for solving complex scientific problems at the collegiate level. It contains a curated dataset featuring scientific problems from the mathematics, chemistry, and physics domains.
-* **Purpose:** To evaluate the performance of LLMs on collegiate-level scientific problem-solving and to identify areas for improvement in reasoning abilities.
-* **Relevance:** Crucial for advancing the scientific research and discovery capabilities of LLMs.
-* **Results:** Current LLMs show unsatisfactory performance with the best overall score of only 43.22%, indicating significant room for improvement.
-* **Error Analysis:** Errors made by LLMs are categorized into ten problem-solving abilities, suggesting no single prompting strategy outperforms others significantly.
-* **Source:** [arXiv:2307.10635](https://doi.org/10.48550/arXiv.2307.10635)  
-* **Cite as:** arXiv:2307.10635 [cs.CL] (or arXiv:2307.10635v3 [cs.CL] for this version)
+## Medical Benchmarks
 
+### Large Language Model Benchmarks in Medical Tasks [2024 October]
+* **Description:** A survey of benchmark datasets for medical LLM tasks, covering text, image, and multimodal data. Includes benchmarks for EHRs, doctor-patient dialogues, medical QA, and image captioning.
+* **Purpose:**  Evaluates LLMs in various medical tasks, contributing to the advancement of medical AI.
+* **Relevance:**  Vital for progressing multimodal medical AI and enhancing healthcare through AI applications.
+* **Source:** [arXiv](https://arxiv.org/html/2410.21348v1)
 
-### LAB-Bench: Measuring Capabilities of Language Models for Biology Research
-* **Description:** LAB-Bench is a broad dataset of over 2,400 multiple-choice questions designed to evaluate AI systems on practical biology research capabilities, including literature recall, figure interpretation, database navigation, and DNA/protein sequence manipulation.
-* **Purpose:** To measure the performance of LLMs on tasks required for scientific research and to develop automated research systems.
-* **Relevance:** Essential for accelerating scientific discovery across disciplines by augmenting LLMs.
-* **Human Expert Comparison:** Performance of several LLMs is measured and compared against human expert biology researchers.
-* **Availability:** A public subset of LAB-Bench is available for use.
-* **Source:** [arXiv:2407.10362](https://doi.org/10.48550/arXiv.2407.10362)  
-* **Cite as:** arXiv:2407.10362 [cs.AI] (or arXiv:2407.10362v3 [cs.AI] for this version)
+## Physics Benchmarks
 
+### Physics GRE: Testing an LLM’s performance on the Physics GRE [2023 December]
+* **Description:**  Evaluates LLMs' performance on the Physics GRE exam, covering undergraduate physics topics.
+* **Purpose:**  Assesses the capabilities and limitations of LLMs in physics education and their understanding of undergraduate-level physics.
+* **Relevance:** Important for understanding the potential and risks of using LLMs as educational tools for physics students.
+* **Source:** [arXiv](https://arxiv.org/html/2312.04613v1)
 
-### SciEx: Benchmarking Large Language Models on Scientific Exams with Human Expert Grading and Automatic Grading
+---
 
-* **Description:** SciEx is a benchmark consisting of university computer science exam questions designed to evaluate the ability of LLMs to solve scientific tasks. It is characterized by being multilingual (containing both English and German exams), multi-modal (including questions with images), and featuring various types of freeform questions with different difficulty levels.
-* **Purpose:** To assess the performance of LLMs on scientific tasks typically encountered in university examinations, including writing algorithms, querying databases, and providing mathematical proofs.
-* **Relevance:** Essential for evaluating the capabilities of LLMs in scientific domains and their potential as assistants in academic and research settings.
-* **Performance:** The best-performing LLM achieves an average exam grade of 59.4%, indicating that free-form exams in SciEx remain challenging for current LLMs.
-* **Human Expert Grading:** Human expert grading of LLM outputs on SciEx is provided to evaluate performance, showcasing the difficulty in assessing free-form responses.
-* **LLM-as-a-Judge:** The study proposes using LLMs as judges to grade answers on SciEx, with experiments showing a 0.948 Pearson correlation with expert grading, demonstrating their potential as graders despite not being perfect at solving the exams.
-* **Source:** [SciEx Benchmark](https://www.scienceex.ai/) [arXiv](https://arxiv.org/abs/2406.10421)
-
-
-### MatSci-NLP
-* **Overview**: MatSci-NLP is a comprehensive benchmark designed to evaluate NLP models specifically in material science. It covers a wide range of tasks such as predicting material properties and extracting information from scientific literature.
-* **Key Features**: The dataset is structured to encourage generalization across tasks, making it a cornerstone for assessing LLM capabilities in this field.
-* **Link source**: [MatSci-NLP](https://mila.quebec/en/article/revolutionizing-materials-science-with-nlp-introducing-matsci-nlp-and-honeybee)
-
-
-## SciKnowEval: Evaluating Multi-level Scientific Knowledge
-* **Description:** SciKnowEval introduces a systematic framework to assess LLMs across five progressive levels of scientific knowledge, including memory, comprehension, and reasoning in fields like chemistry and physics.
-* **Purpose:** To establish a standard for benchmarking scientific knowledge in LLMs with a dataset comprising 70,000 scientific problems.
-* **Relevance:** Essential for comprehensive evaluation of LLMs' capabilities in scientific domains.
-* **Source:** [arXiv:2406.09098](https://arxiv.org/html/2406.09098v3) 
-
-
-## Fine-tuning Large Language Models for Chemical Text Mining
-* **Description:** This study explores the effectiveness of fine-tuning LLMs on complex chemical text mining tasks, such as compound entity recognition and reaction role labeling.
-* **Purpose:** To demonstrate that fine-tuned models significantly outperform prompt-only versions, showcasing their potential in extracting knowledge from intricate chemical texts.
-* **Relevance:** Useful for chemical research and knowledge extraction.
-* **Source:** [Chem. Sci., 2024](https://pubs.rsc.org/en/content/articlehtml/2024/sc/d4sc00924j)  
-
-
-## Materials Science and Chemistry LLM Resources
-* **Description:** This GitHub repository compiles various benchmarks, datasets, and evaluations related to machine learning applications in materials science and chemistry.
-* **Purpose:** To provide a comprehensive collection for researchers interested in LLM applications in chemistry and materials science, including resources like ChemQA and ChemLLMBench.
-* **Relevance:** Important for advancing LLM applications in chemistry and materials science.
-* **Source:** [GitHub: materials-data-facility/matchem-llm](https://github.com/materials-data-facility/matchem-llm) 
-
-
-## ARB: Advanced Reasoning Benchmark for Large Language Models
-* **Description:** The Advanced Reasoning Benchmark (ARB) focuses on evaluating LLMs through advanced reasoning problems across multiple disciplines, including physics and chemistry.
-* **Purpose:** To assess models' capabilities in logical deduction and problem-solving, contributing to a better understanding of their inferential abilities.
-* **Relevance:** Vital for evaluating LLMs' reasoning capabilities in scientific domains.
-* **Source:** [OpenReview: ARB](https://openreview.net/forum?id=gsZAtAdzkY)
-
-
-### Physics GRE: Testing an LLM’s performance on the Physics GRE (for education)
-* **Description:** This study evaluates the performance of a popular LLM-based conversational service on the standardized Physics GRE examination, which covers undergraduate physics topics including mechanics, electricity and magnetism, thermodynamics and statistical mechanics, and quantum physics.
-* **Purpose:** To understand the risks and limitations of LLMs in the field of physics education.
-* **Relevance:** Important for evaluating LLMs as personalized assistants for physics students.
-* **Source:** [arXiv](https://arxiv.org/html/2312.04613v1) 
-
-
-### MaterialBENCH: Evaluating College-Level Materials Science Knowledge
-* **Description:** MaterialBENCH is a college-level benchmark dataset for LLMs in the materials science field, consisting of problems that assess knowledge equivalent to that of a materials science undergraduate.
-* **Purpose:** To evaluate LLMs' understanding of materials science concepts and their ability to solve problems in this domain.
-* **Relevance:** Useful for assessing LLMs' capabilities in materials science education and research.
-* **Source:** [arXiv](https://arxiv.org/abs/2409.03161) 
-
-
-### Leveraging Large Language Models for Explaining Material Synthesis Mechanisms
-
-* **Description:** Large language models (LLMs) have shown potential in advancing materials discovery, particularly in automating and providing insights into experimental design and result interpretation. This study addresses the gap in evaluating LLMs' understanding of physicochemical principles and their reasoning capabilities regarding material synthesis mechanisms.
-* **Purpose:** To develop a benchmark for evaluating LLMs' ability to reason about synthesis mechanisms, focusing on gold nanoparticles (AuNPs) synthesis, and to create an AI assistant for explaining these mechanisms.
-* **Dataset:** The study introduces a benchmark consisting of 775 semi-manually created multiple-choice questions in the field of AuNPs synthesis.
-* **Evaluation Metric:** A confidence-based score (c-score) is derived from the model's output logits to quantitatively evaluate the selection probabilities for correct answers.
-* **Results:** An AI assistant using retrieval-augmented generation (RAG) was developed, achieving a 10% improvement in accuracy over the leading model, Claude.
-* **Relevance:** This research underscores the potential of LLMs in recognizing scientific mechanisms and provides a valuable tool for aiding the exploration of synthesis methods. It also lays the foundation for developing highly efficient models utilizing material synthesis mechanisms.
-* **Resources:** Code and dataset are available at the GitHub repository: [llm_for_mechanisms](https://github.com/Dandelionym/llm_for_mechanisms).
+If you find this markdown helpful, welcome to give a star ⭐️ to the original repository!  And contributions to expand this benchmark list are highly welcome!
